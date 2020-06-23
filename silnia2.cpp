@@ -32,25 +32,19 @@ int main()
         ss << silnia(a);
         ss >> wynik;
 
-
-        /*
-
-        for (int j = 0; j < sizeof(wynik); j++)
+        if(a > 5)
         {
-            dlugosc_inta++;
-        }
-        */
-
-        if (a > 4)
-        {
-            std::cout << wynik[1] << " ";
-            std::cout << wynik[2] << std::endl;
+            std::cout << wynik[1] << " " << wynik[2] << std::endl;
         }
 
-        else
+        if(a < 5 && a > 2)
         {
-            std::cout << 0 << " ";
-            std::cout << wynik << std::endl;
+            std::cout << wynik[0] << " " << wynik[1] << std::endl;
+        }    
+        
+        if(a <= 2)
+        {
+            std::cout << 0 << " " << wynik[0] << std::endl;
         }
 
        // std::cout << wynik << std::endl;
